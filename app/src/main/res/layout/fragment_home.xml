@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/ad_slider"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                custom:auto_cycle="true"
+                custom:indicator_visibility="visible"
+                custom:pager_animation="Background2Foreground"
+                custom:pager_animation_span="1100"/>
+
+            <org.askerov.dynamicgrid.DynamicGridView
+                android:id="@+id/homeGridView"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth" />
+
+            <include layout="@layout/view_horizontal_divider"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/home_service_card"
+                    android:background="@mipmap/card_bg"/>
+                <include layout="@layout/view_vertical_divider"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/home_service_library"
+                    android:background="@mipmap/book_bg"/>
+            </LinearLayout>
+            <include layout="@layout/view_horizontal_divider"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/home_service_lab"
+                    android:background="@mipmap/lab_bg"/>
+                <include layout="@layout/view_vertical_divider"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/home_service_dorm"
+                    android:background="@mipmap/dorm_bg"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_ad"
+                android:background="@mipmap/ad"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

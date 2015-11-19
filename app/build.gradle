@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "www.nuaa.edu.cn.inanhang"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'net.danlew:android.joda:2.8.2'
+    compile 'com.orhanobut:logger:1.11'
+    compile 'com.kyleduo.switchbutton:library:1.2.9'
+    compile 'com.isseiaoki:simplecropview:1.0.8'
+    compile 'com.afollestad:material-dialogs:0.7.9.1'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    compile project(':AppIntro-library')
+    compile project(':AndroidImageSlider-library')
+    compile project(':MaterialEditText-library')
+    compile project(':BottomSheet-library')
+    compile project(':PullToRefresh-library')
+    compile project(':dynamicgrid')
+    compile project(':xCLCharts')
+}
+

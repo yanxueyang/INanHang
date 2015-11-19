@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_quyu"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/car_icon"/>
+            <TextView
+                android:id="@+id/fenlei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="你好"
+                android:textColor="#4d4d4d" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:background="#e6e6e6" />
+
+        <LinearLayout
+            android:id="@+id/ll_jiage"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/car_icon"/>
+            <TextView
+                android:id="@+id/diqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="你好"
+                android:textColor="#4d4d4d" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:background="#e6e6e6" />
+
+        <LinearLayout
+            android:id="@+id/ll_huxing"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/car_icon"/>
+            <TextView
+                android:id="@+id/paixu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="你好"
+                android:textColor="#4d4d4d" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/ll_layout"
+        android:background="#e6e6e6" />
+
+</RelativeLayout>

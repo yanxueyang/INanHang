@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NMUI"/>
+
+    <style name="NMUI.EditText">
+        <item name="android:singleLine">true</item>
+        <item name="met_clearButton">true</item>
+        <item name="met_iconPadding">8dp</item>
+        <item name="met_hideUnderline">true</item>
+        <item name="met_baseColor">@color/nm_black</item>
+        <item name="met_primaryColor">@color/theme_color</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">@dimen/font_middle_size</item>
+    </style>
+
+    <style name="NMUI.ServiceOption" parent="Base.Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textSize">@dimen/font_middle_size</item>
+        <item name="android:textColor">@color/hint_color</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="NMUI.ServiceOption.Small">
+        <item name="android:textSize">@dimen/font_small_2_size</item>
+        <item name="android:textColor">@color/hint_color</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:background">@drawable/sel_line_bg</item>
+    </style>
+    <style name="NMUI.ManyEditText">
+        <item name="met_clearButton">true</item>
+        <item name="met_iconPadding">8dp</item>
+        <item name="met_hideUnderline">true</item>
+        <item name="met_baseColor">@color/nm_black</item>
+        <item name="met_primaryColor">@color/theme_color</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">@dimen/font_middle_size</item>
+    </style>
+    <style name="NMUI.TextView">
+        <item name="android:textSize">@dimen/font_middle_size</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/nm_black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+    <style name="NMUI.TextView.Arrow">
+        <item name="android:padding">12dp</item>
+        <item name="android:drawableRight">@mipmap/common_right_icon</item>
+        <item name="android:background">@drawable/sel_line_bg</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="NMUI.TextView.NoIcon">
+        <item name="android:padding">12dp</item>
+    </style>
+    <style name="NMUI.TextView.Head">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">@dimen/font_small_2_size</item>
+    </style>
+</resources>

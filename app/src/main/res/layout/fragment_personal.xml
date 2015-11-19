@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/me_bg">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/imageView4"
+            android:background="@mipmap/login_user_icon"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            style="@style/NMUI.TextView.Arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/car_icon"
+            android:text="我的校园卡"
+            android:id="@+id/wodexiaoyuanka"/>
+        <TextView
+            android:id="@+id/bind_status_tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="40dp"
+            android:text="已绑定"
+            android:textColor="@color/nm_light_black"/>
+    </FrameLayout>
+    <include layout="@layout/view_horizontal_divider"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/wodetushuguan"
+            style="@style/NMUI.TextView.Arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/book_icon"
+            android:text="我的图书馆"/>
+    </FrameLayout>
+    <include layout="@layout/view_horizontal_divider"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/id_bind2"
+            style="@style/NMUI.TextView.Arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/car_icon"
+            android:text="帐号相关"/>
+    </FrameLayout>
+</LinearLayout>

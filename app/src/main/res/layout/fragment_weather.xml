@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="bottom"
+              android:background="@mipmap/weather_background_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@mipmap/weather_bottom_bg_h">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/todayweathertype" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:id="@+id/todayweathertime"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:id="@+id/todayweatherweek"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/todayweathertemp"
+            android:lineSpacingExtra="8dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/weather_tips_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#ffffff"
+                android:id="@+id/todayweathertips"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <www.nuaa.edu.cn.inanhang.View.WeatherSingelView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yesterdayweather"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#e2e2e2"/>
+
+        <www.nuaa.edu.cn.inanhang.View.WeatherSingelView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tomorrowweather"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#e2e2e2"/>
+
+        <www.nuaa.edu.cn.inanhang.View.WeatherSingelView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dayaftertomorrowweather"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="宿舍资料"
+        android:id="@+id/textView63" />
+    <TextView
+        style="@style/NMUI.TextView.Arrow"
+        android:id="@+id/activity_dormlouyutext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/choosedorm"
+        android:drawablePadding="24dp"
+        android:drawableRight="@mipmap/next"
+        android:text="请选择楼宇"
+        />
+
+    <include layout="@layout/view_horizontal_divider"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/activity_dormlouyuedit"
+            style="@style/NMUI.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的宿舍号"
+            android:inputType="number"
+            app:met_iconLeft="@mipmap/dormnumber"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="查询"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/activity_dormquire"
+        android:background="@mipmap/login_btn"
+        android:layout_gravity="center_horizontal" />
+
+
+
+</LinearLayout>

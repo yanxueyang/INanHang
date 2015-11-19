@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidImageSlider-library/AndroidImageSlider-library.iml" filepath="$PROJECT_DIR$/AndroidImageSlider-library/AndroidImageSlider-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AppIntro-library/AppIntro-library.iml" filepath="$PROJECT_DIR$/AppIntro-library/AppIntro-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BottomSheet-library/BottomSheet-library.iml" filepath="$PROJECT_DIR$/BottomSheet-library/BottomSheet-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/INanHang.iml" filepath="$PROJECT_DIR$/INanHang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialEditText-library/MaterialEditText-library.iml" filepath="$PROJECT_DIR$/MaterialEditText-library/MaterialEditText-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PullToRefresh-library/PullToRefresh-library.iml" filepath="$PROJECT_DIR$/PullToRefresh-library/PullToRefresh-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamicgrid/dynamicgrid.iml" filepath="$PROJECT_DIR$/dynamicgrid/dynamicgrid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xCLCharts/xCLCharts.iml" filepath="$PROJECT_DIR$/xCLCharts/xCLCharts.iml" />
+    </modules>
+  </component>
+</project>

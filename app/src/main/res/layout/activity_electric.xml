@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/power_title_bg"
+        android:gravity="bottom">
+        <include layout="@layout/view_horizontal_divider"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:id="@+id/imageView2"
+                    android:background="@mipmap/elec_power_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="本月已用电量\n211.0度"
+                    android:paddingLeft="16dp"
+                    android:gravity="left|center_vertical"
+                    android:id="@+id/powerdosage" />
+            </LinearLayout>
+
+            <include layout="@layout/view_vertical_divider"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:id="@+id/imageView21"
+                    android:background="@mipmap/elec_money_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="本月已用电费\n105.5元"
+                    android:paddingLeft="16dp"
+                    android:gravity="left|center_vertical"
+                    android:id="@+id/powercost" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/horizontalScrollView">
+        <LinearLayout
+            android:id="@+id/ll_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="以上为将军路校区11幢216宿舍\n截至止2015-11-13 12:00:00的查询结果"
+        android:id="@+id/electrictext" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="去充值"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/gotorecharge"
+        android:background="@mipmap/login_btn"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+
+    <dimen name="font_small_size">12sp</dimen>
+    <dimen name="font_small_2_size">14sp</dimen>
+    <dimen name="font_middle_size">16sp</dimen>
+    <dimen name="font_middle_2_size">18sp</dimen>
+    <dimen name="font_large_size">20sp</dimen>
+    <dimen name="font_large_2_size">24sp</dimen>
+
+</resources>
